@@ -77,10 +77,10 @@ nav ul li a.active {
 
 .sidebar {
   width: 250px;
-  background: #fff;
+  background: rgba(233, 104, 5, 0.755);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0.5, 1.0);
 }
 
 .sidebar h3 {
@@ -140,7 +140,7 @@ nav ul li a.active {
 .search-bar button {
   padding: 0.5rem 1rem;
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
