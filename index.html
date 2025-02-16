@@ -10,65 +10,109 @@
 <body>
   <header>
     <div class="container">
-      <img src="images/logo.png" class="logo"><h1>ARTIFICIAL INTELLIGENCE</h1>
+      <h1>ARTIFICIAL INTELLIGENCE</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="post.html">Categories</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#">Post</a></li>
+          <li><a href="#">About</a></li>
+          <li><button id="darkModeToggle" aria-label="Toggle dark mode">
+            <i class="bi bi-brightness-high"></i>
+          </button></li>
         </ul>
-        <button id="darkModeToggle" aria-label="Toggle dark mode">
-          <i class="bi bi-brightness-high"></i>
-        </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." aria-label="Search">
+          <button aria-label="Search"><i class="bi bi-search"></i></button>
+        </div>
+        
       </nav>
     </div>
   </header>
 
-  <section class="featured-post">
-    <div class="container">
-      <h3 id="about">ABOUT US</h3>
-      <p>Welcome to AI, let's go-to the source for the latest insights, trends, and discussions in the world of technology, artificial intelligence, cybersecurity, and business innovation.</p>
+  <div class="main-container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#Business">AI in Business</a></li>
+        <li><a href="#health">AI in Healthcare</a></li>
+        <li><a href="#robot">AI and Robotics</a></li>
+        <li><a href="#cyber">AI in Cybersecurity</a></li>
+      </ul>
 
-       <p> Our mission is to provide engaging, informative, and thought-provoking content to help you stay ahead in the fast-evolving digital landscape. Whether you're a tech enthusiast, a business professional, or simply curious about the future of AI and cybersecurity, we've got something for you.</p>
-        
-        <p>Stay connected, stay informed, and explore the cutting-edge of technology with us!</p>
-      <img src="images/featured-tech.jpg" alt="Featured Post">
-      <h2>The Future of Technology: Innovations Shaping Our World</h2>
-      <p>From AI to blockchain, explore the tech trends that are revolutionizing industries.</p>
-    </div>
-  </section>
+      <h3>Tags</h3>
+      <div class="tags">
+        <a href="#" class="tag">Machine Learning</a>
+        <a href="#" class="tag">Deep Learning</a>
+        <a href="#" class="tag">Neural Networks</a>
+        <a href="#" class="tag">Automation</a>
+        <a href="#" class="tag">Data Science</a>
+      </div>
 
-  <section class="articles">
-    <div class="container">
-      <article>
-        <img src="images/ai-business.jpg" alt="AI in Business">
-        <h3>AI in Business</h3>
-        <p>How artificial intelligence is transforming industries and optimizing workflows.</p>
-      </article>
-      <article>
-        <img src="images/ai-healthcare.jpg" alt="AI in Healthcare">
-        <h3>AI in Healthcare</h3>
-        <p>The role of AI in improving patient care, diagnostics, and treatments.</p>
-      </article>
-      <article>
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#">The Future of Technology</a></li>
+        <li><a href="#">AI in Business</a></li>
+        <li><a href="#">AI in Healthcare</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="featured-post">
+        <div class="container">
+          <img src="images/featured-tech.jpg" alt="Featured Post">
+          <h2>The Future of Technology: Innovations Shaping Our World</h2>
+          <p>From AI to blockchain, explore the tech trends that are revolutionizing industries.</p>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="container">
+          <article>
+            <img src="images/ai-business.jpg" alt="AI in Business" id="Business">
+            <h3>AI in Business</h3>
+            <p>How artificial intelligence is transforming industries and optimizing workflows.</p>
+          </article>
+          <article>
+            <img src="images/ai-healthcare.jpg" alt="AI in Healthcare"id="health">
+            <h3>AI in Healthcare</h3>
+            <p>The role of AI in improving patient care, diagnostics, and treatments.</p>
+          </article>
+          <article>
+            <img src="images/ai-robot.jpg" alt="AI and Robotics"id="robot">
+            <h3>AI and Robotics</h3>
+            <p>Advancements in robotics driven by artificial intelligence.</p>
+          </article>
+          <article>
+            <img src="images/cybersecurity.jpg" alt="AI in Cybersecurity"id="cyber">
+            <h3>AI in Cybersecurity</h3>
+            <p>How AI is enhancing security by detecting and preventing cyber threats.</p>
+          </article>
+        </div>
+      </section>
+
+      <article class="blog-post">
+        <h2>The Power of Artificial Intelligence</h2>
         <img src="images/ai-robot.jpg" alt="AI and Robotics">
-        <h3>AI and Robotics</h3>
-        <p>Advancements in robotics driven by artificial intelligence.</p>
+        <p>Artificial Intelligence (AI) is rapidly changing the way we live, work, and interact with technology. From smart assistants to self-driving cars, AI is making our world more efficient.</p>
+        
+        <h3>AI in Business</h3>
+        <p>Companies are using AI to automate tasks, analyze big data, and improve customer experience.</p>
+       
+        <h3>AI in Healthcare</h3>
+        <img src="images/ai-healthcare.jpg" alt="AI in Healthcare">
+        <p>AI-powered diagnostics help doctors detect diseases earlier and provide accurate treatment recommendations.</p>
+
+        <p>The future of AI is limitless. As technology evolves, we must ensure ethical AI development and responsible usage.</p>
       </article>
-      <article>
-        <img src="images/cybersecurity.jpg" alt="AI in Cybersecurity">
-        <h3>AI in Cybersecurity</h3>
-        <p>How AI is enhancing security by detecting and preventing cyber threats.</p>
-      </article>
-    </div>
-  </section>
+    </main>
+  </div>
 
   <footer>
     <div class="container">
       <div class="social-links">
-        <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
-        <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i> Twitter</a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
       </div>
     </div>
   </footer>
